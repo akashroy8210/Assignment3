@@ -5,9 +5,15 @@ const headingPara=document.querySelector("header");
 // 1 thing i have to do is on clicking the greet button there should be appeear on heading what i write in inoput box 
 greetBtn.addEventListener("click" ,()=>{
     const input=document.querySelector("input").value;
-    headingPara.innerText="Hello! " + input;
+    if(input.length===0){
+        headingPara.innerText="Hello";
     headingPara.style.fontSize="1.875rem";
     headingPara.style.fontWeight="300";
+    }else{
+        headingPara.innerText="Hello! " + input;
+    headingPara.style.fontSize="1.875rem";
+    headingPara.style.fontWeight="300";
+    }
 })
 
 let elementRed=document.getElementById("red");
@@ -30,3 +36,4 @@ elementYellow.addEventListener("click",()=>{
     elementYellow.style.backgroundColor="yellow";
     
 })
+
