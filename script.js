@@ -10,7 +10,7 @@ greetBtn.addEventListener("click" ,()=>{
     headingPara.style.fontSize="1.875rem";
     headingPara.style.fontWeight="300";
     }else{
-        headingPara.innerText="Hello! " + input;
+        headingPara.innerText="Hello, " + input;
     headingPara.style.fontSize="1.875rem";
     headingPara.style.fontWeight="300";
     }
@@ -36,4 +36,5 @@ elementYellow.addEventListener("click",()=>{
     elementYellow.style.backgroundColor="yellow";
     
 })
+
 
